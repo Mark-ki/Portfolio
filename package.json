@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+      "tailwind-watch": "tailwindcss build -i src/styles.css -o src/output.css --watch"
+  }
+}

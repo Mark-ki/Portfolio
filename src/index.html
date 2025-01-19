@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style> -->
+    <script src="./main.js" defer></script>
+    
+</head>
+<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 overflow-x-hidden">
+
+    <div>
+        <div class="lg:block h-full fixed z-20 inset-0 top-0 left-[max(0px,calc(50%-60rem))] right-auto w-[19rem] pt-10 pb-10 pl-6 pr-6 
+        overflow-y-auto antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-gray-800">
+            <!-- Profile dropdown -->
+            <div class="relative items-center flex flex-col w-full pb-6 border-b-2 border-gray-600 ">
+                <div class="pb-4">
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  </button>
+                </div>
+                <h1 class="ml-1 text-4xl w-min text-center">Nattapol Kiatchaipipat</h1>
+    
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+    
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+              </div>
+            <nav class="h-2/3 lg:text-2xl lg:leading-6 relative pt-20 pb-20">
+                <div class="mx-auto ">
+                    <div class="relative flex items-center justify-between">
+                      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                          <span class="absolute -inset-0.5"></span>
+                          <span class="sr-only">Open main menu</span>
+                          <!--
+                            Icon when menu is closed.
+              
+                            Menu open: "hidden", Menu closed: "block"
+                          -->
+                          <!-- <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg> -->
+                          <!--
+                            Icon when menu is open.
+              
+                            Menu open: "block", Menu closed: "hidden"
+                          -->
+                          <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="navBox flex flex-1 items-center justify-center sm:items-stretch">
+                        <div class="flex shrink-0 items-center">
+                          <!-- <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"> -->
+                        </div>
+                        <div class="hidden sm:block">
+                        
+                        <div class="absolute z-10 left-1/2 w-0.5 h-full bg-gray-600"></div>
+                        <!-- <div class="vline absolute z-10 ml-[3rem] w-0.5 h-0 bg-gray-300"></div> -->
+                        
+                          <div class="flex justify-items-center space-y-20 flex-col">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a id="homeNav" href="#home" class="navB rounded-md z-20 px-3 py-2 text-2xl font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-center" aria-current="page">Home</a>
+                            <a id="expNav" href="#exp" class="navB rounded-md z-20 px-3 py-2 text-2xl font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-center" aria-current="page">Experience</a>
+                            <a id="projectsNav" href="#projects" class="navB rounded-md z-20 px-3 py-2 text-2xl font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-center">Project</a>
+                            <!-- <a href="#" class="rounded-md z-20 px-3 py-2 text-2xl font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-center">Other</a> -->
+                            <a id="contactNav" href="#contact" class="navB rounded-md z-20 px-3 py-2 text-2xl font-medium bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-center">Contact</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+        </div>
+        <!-- 
+        <nav class="bg-gray-800">
+            
+        
+          </nav> -->
+        <!-- <header>
+            <h1 id="text-hole">Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header> -->
+        
+        <div class="pl-[19rem]">
+  <!-- Hero Section -->
+  <!-- <div class="relative h-[500px] flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-700 text-white">
+    <h1 class="text-5xl font-bold drop-shadow-md">
+      Welcome to My Portfolio
+    </h1>
+  </div> -->
+
+  <div class="parallax" style="height: 910px;">
+    <div class="glass parallaxContent">
+      <h1 class=" prose text-8xl p-10 font-bold text-slate-900"> Welcome to My Portfolio</h1>
+    </div>
+  </div>
+  <div class="absolute top-[655px] bg-transparent w-full h-64 bg-gradient-to-t from-slate-900 "></div>
+  <!-- Main Content -->
+  <div class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+    <!-- Education Section -->
+    <section id="home" class="space-y-8">
+
+      <h1 class="prose prose-slate text-4xl font-bold text-slate-900 dark:text-white pb-10">
+        Hi, I'm Mark, a CS student
+      </h1>
+
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2">
+        About Me
+      </h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold">University of Wisconsin - Madison</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            <strong>Bachelor of Arts in Computer Science</strong><br>
+            GPA: 3.97<br>
+            Madison, WI<br>
+            Aug. 2023 – May. 2026
+          </p>
+          <ul class="pt-10 list-disc list-inside  text-gray-600 dark:text-gray-400">
+            <li>Student Organizations: Wisconsin Robotics, Cybersecurity Club, etc.</li>
+            <li>Hackathons: MadHacks 2023, Google Developer’s CheeseHack</li>
+            <li>Relevant Courses: Algorithms, Cryptography, Data Science Modeling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="exp" class="space-y-8">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2">
+        Experience
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Internship Card -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Backend Software Engineer Internship</h3>
+            <p class="text-gray-600 dark:text-gray-300"><a href="https://scbtechx.io/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-105">SCB TechX</a></p>
+          <p class="text-gray-600 dark:text-gray-300">Jun. 2024 – Aug. 2024 | Bangkok, Thailand</p>
+          <ul class="list-disc list-inside mt-2 text-gray-600 dark:text-gray-400">
+            <li>Developed a new loan management system for a digital banking app.</li>
+            <li>Implemented Agile methodology with modern tech stack (Node.js, Sequelize, PostgreSQL).</li>
+          </ul>
+        </div>
+        <!-- Freelance Card -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Web Programmer (Freelance)</h3>
+          <p class="text-gray-600 dark:text-gray-300">Magna Int.</p>
+          <p class="text-gray-600 dark:text-gray-300">Aug. 2021 – Aug. 2022 | Bangkok, Thailand</p>
+          <ul class="list-disc list-inside mt-2 text-gray-600 dark:text-gray-400">
+            <li>Developed a planning and calendar system managing delivery schedules.</li>
+            <li>Used JavaScript, React, Firebase, HTML, and CSS for web application.</li>
+            <li>Website: <a href="https://calendar-9401e.web.app/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-105">https://calendar-9401e.web.app/</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-8">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2">
+        Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">Wisconsin Robotics Rover GUI</h3>
+          <p class="text-gray-600 dark:text-gray-400">Python, Flask, Docker</p>
+          <p class="text-gray-600 dark:text-gray-400 pb-8">Oct. 2023– Present</p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+        <li>Spearheaded the development of a responsive web application using Flask serving as the GUI for Wisconsin Robotics’s rover project used for a national competition.</li>
+        <li>Mapped the rover’s location and visualized analytical data to enhance operational insights for the robotics system.</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">Badgr Programming Language</h3>
+          <p class="text-gray-600 dark:text-gray-400">Java, Git</p>
+          <p class="text-gray-600 dark:text-gray-400 pb-8">Sep. 2024– Present</p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+        <li>Led a team of 5 as a co-leader in order to create a new interpreter for a custom programming language based on C with some additional features using Java and make.</li>
+        <li>Submission as one of the teams of the Software Development student organization.</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">UWDegree Planner</h3>
+          <p class="text-gray-600 dark:text-gray-400">Next.js, Typescript, Selenium, Python, Javascript, HTML/CSS</p>
+          <p class="text-gray-600 dark:text-gray-400 pb-8">Nov. 2024– Present</p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+        <li>Display UW-Madison classes into hierarchical trees to help students with degree planning and track graduation on a responsive and modern web application.</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+          <h3 class="text-lg font-semibold">VEX Robotics Competition</h3>
+          <p class="text-gray-600 dark:text-gray-400">Ruamrudee International School</p>
+          <p class="text-gray-600 dark:text-gray-400 pb-8">Jan. 2022– Mar. 2023</p>
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+        <li>Worked with a 5 people team to compete with robot rovers on a regional event.</li>
+        <li>Acted as the lead programmer for the drivetrain as well as other actions of the robot using C++ and Java.</li>
+        <li>Passed through to the semi final round as a representative of the school.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="space-y-4">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white border-b border-gray-300 dark:border-gray-700 pb-2">
+        Contact
+      </h2>
+      <p class="text-gray-700 dark:text-gray-300">
+        Reach me at <a href="mailto:your.email@example.com" class="text-blue-600 dark:text-blue-400">nkiatchaipip@wisc.edu</a>
+      </p>
+      <div class="flex flex-row gap-16">
+        <a href="https://www.linkedin.com/in/nattapol-kiatchaipipat/" target="_blank" class="block w-auto text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-105">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5 11.5h-3v-5.5c0-1.1-.9-2-2-2s-2 .9-2 2v5.5h-3v-10h3v1.5c.89-1.34 2.36-2.5 4-2.5 2.21 0 4 1.79 4 4v7.5z"/>
+          </svg>
+        </a>
+        <a href="mailto:nkiatchaipip@wisc.edu" class="block w-auto text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-105">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12.713l11.985-8.713h-23.97l11.985 8.713zm0 2.287l-12-8.713v12.713h24v-12.713l-12 8.713z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Mark-ki" target="_blank" class="block w-auto text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-105">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.649.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.624-5.475 5.921.43.372.814 1.102.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.218.694.825.576 4.765-1.589 8.2-6.086 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+    </div>
+    <div class="line ml-[3rem] fixed z-40 w-5 h-0.5 bg-gray-600"></div>
+</body>
+</html>
+<!-- <section class="parallax" style=" height: 500px;"> -->
+</section>
