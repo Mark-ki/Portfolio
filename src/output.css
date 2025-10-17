@@ -626,6 +626,10 @@ video {
   top: 0px;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1344,6 +1348,26 @@ video {
 .via-zinc-900 {
   --tw-gradient-to: rgb(24 24 27 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-stone-900\/50 {
+  --tw-gradient-to: rgb(28 25 23 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(28 25 23 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-stone-900\/20 {
+  --tw-gradient-to: rgb(28 25 23 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(28 25 23 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-stone-900\/10 {
+  --tw-gradient-to: rgb(28 25 23 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(28 25 23 / 0.1) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-stone-900\/5 {
+  --tw-gradient-to: rgb(28 25 23 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(28 25 23 / 0.05) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-blue-500 {
